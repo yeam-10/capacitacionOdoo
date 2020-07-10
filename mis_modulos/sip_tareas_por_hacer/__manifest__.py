@@ -13,6 +13,11 @@
 'version': '1.0 ',
 'depends': ['base'], 
 
+'data': [
+'sip_views/sip_menu_tareas.xml',
+'sip_views/sip_vistas_tareas.xml',
+],
+
  'installable': True,
  'application': False,
  'auto_install': False,

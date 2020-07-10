@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+   <data> 
+   <!--Accion de ventana-->
+   <act_window
+     id="sip_accion_tareas"
+     name="Accion tareas"
+     res_model="sip.tareas"
+     view_mode="tree,form"
+   />
+<!--Menu padre de acceso-->
+ <menuitem
+      id="sip_menu_tareas"
+      name="SIP Tareas"
+      sequence="20"
+  />
+ <!--Menu hijp de acceso-->
+    <menuitem
+         id="sip_submenu_tareas"
+         name="Tareas por hacer"
+         parent="sip_menu_tareas"
+         sequence="10"
+         action="sip_accion_tareas"
+     />
+  </data>
+</odoo>
