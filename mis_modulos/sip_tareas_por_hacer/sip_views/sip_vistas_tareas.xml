@@ -32,11 +32,31 @@
             <field name="model">sip.tareas</field>
                 <field name="arch" type="xml">
                  <tree colors="blue:is_done==True">
+                 <button name="sip_done" type="object" string="Tarea terminada" class="oe highlight"/>
                      <field name="name"/>
                      <field name="is_done"/>
                 </tree>
           </field>
        </record>
+
+<!-- Vista Search-->
+
+       <record id="sip_tareas_view_search" model="ir.ui.view">
+          <field name="name">sip.tareas.view.search</field>
+          <field name="model">sip.tareas</field>
+          <field name="arch" type="xml">
+             <search>
+                <field name="name"/>
+                 <filter string="Por hacer" domain="[('is_done','=',False)]"/>
+                 <filter string="Hechas" domain="[('is_done','!=',False)]"/>
+             </search>
+           </field>
+        </record>
+
+<!--Boton de tarea terminada-->
+
+<!--<button name="sip_done" type="object" string="Tarea terminada" class="oe highlight"/>-->
+
    </data>
 
 </odoo>
