@@ -16,6 +16,8 @@
 'data': [
 'sip_views/sip_menu_tareas.xml',
 'sip_views/sip_vistas_tareas.xml',
+'sip_security/sip_grupo_tareas.xml',
+'sip_security/ir.model.access.csv',
 ],
 
  'installable': True,

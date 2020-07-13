@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data>
+    <record model="ir.module.category" id="sip_tareas_category">
+      <field name="name">Sip Tareas</field>
+    </record>  
+
+    <record model="res.groups" id="sip_group_tareas1">
+        <field name="name">Group de acceso Nivel 1</field>
+        <field name="category_id" ref="sip_tareas_category"></field>
+        <field name="menu_access" eval="[(6,0, [ref('sip_menu_tareas')])]"/>
+   </record>
+
+
+    <record model="res.groups" id="sip_group_tareas2">
+        <field name="name">Group de acceso Nivel 2</field>
+        <field name="category_id" ref="sip_tareas_category"></field>
+        <field name="menu_access" eval="[(6, 0, [ref('sip_menu_tareas')])]"/>
+   </record>
+
+
+    <record model="res.groups" id="sip_group_tareas3">
+        <field name="name">Group de acceso Nivel 3</field>
+        <field name="category_id" ref="sip_tareas_category"></field>
+        <field name="menu_access" eval="[(6, 0, [ref('sip_menu_tareas')])]"/>
+   </record>
+
+
+
+   </data>
+ </odoo>  

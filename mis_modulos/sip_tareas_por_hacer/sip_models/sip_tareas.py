@@ -13,5 +13,10 @@ class SipTareas(models.Model):
     def sip_done(self):
         self.is_done = not self.is_done
 
-     #def sip_done(self):
+    @api.multi
+    def sip_clear_done(self):
+        done_recs = self.search([('is_done', '=', True)])
+        done_recs.write({'active': False})
+        return True
+   
          

@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+sip_access_grupo_nivel1,sip_grupo_nivel1,model_sip_tareas,sip_group_tareas1,1,0,0,0
+sip_access_grupo_nivel2,sip_grupo_nivel2,model_sip_tareas,sip_group_tareas2,1,1,1,0
+sip_access_grupo_nivel3,sip_grupo_nivel3,model_sip_tareas,sip_group_tareas3,1,1,1,1
