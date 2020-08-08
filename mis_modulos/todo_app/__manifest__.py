@@ -11,6 +11,10 @@
   
     'depends': ['base'],
 
+    'data':[
+        'todo_task_view/todo_task.xml',
+    ],
+
     'installable': True,
     'application': False,
     'auto_install': False,
