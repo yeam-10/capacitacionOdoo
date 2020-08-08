@@ -1,0 +1,22 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+
+<odoo>
+  <data>
+   <record id="sip_tareas_view_form_inherited" model="ir.ui.view" >
+      <field name="name">Todo task form - User extension</field>
+      <field name="model">sip.tareas</field>
+      <field name="inherit_id" ref="sip_tareas_por_hacer.sip_tareas_view_form"/>
+      <field name="arch" type="xml">
+          <field name="name" position="after">
+            <field name="user_id"/>
+          </field>
+          <field name="is_done" position="before">
+              <field name="date_deadline"/>
+          </field>
+         <field name="name" position="attributes">
+              <atributes name="string">I have to</atributes>
+          </field>
+        </field>
+    </record>
+  </data>
+</odoo>
